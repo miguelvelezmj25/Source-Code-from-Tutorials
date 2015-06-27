@@ -11,33 +11,25 @@
 <body>
 
     <div class="container-fluid">
-        <h1>3 column layout</h1>
 
-        <!--
-        col-sm-push-5 will only push 5 columns on sm view-ports or greater
-
-        screen >= sm (desktop)
-        |A|B|C|
-
-        screen < sm (mobile)
-        |B|
-        |A|
-        |C|
-        -->
+        <h3>Push and pull</h3>
 
         <div class="row">
 
-            <!-- col-sm-push-5 = move right 5 columns (on larger screens) -->
-            <div class="col-sm-5 col-sm-push-5">
-                Content B
+            <!--
+                col-md-push-5 = move right 5 columns on md or greater (stay same for sm)
+                else just show as normal
+            -->
+            <div class="col-md-5 col-md-push-5" style="background: lightgreen">
+                Content A - MAIN BANNER
             </div>
 
             <!-- col-sm-pull-5 = move left 5 columns -->
-            <div class="col-sm-5 col-sm-pull-5">
-                Content A
+            <div class="col-md-5 col-md-pull-5" style="background: lightcoral">
+                Content B
             </div>
 
-            <div class="col-sm-2">
+            <div class="col-md-2" style="background: lightblue">
                 Content C
             </div>
 
